@@ -91,13 +91,14 @@ ol {
 
 #selectnav1 {
   display: none;
+  box-shadow: 0 0 1px 1px;
 }
 /* home page style */
 #header_area {
-  background: url('images/header_bg.png') repeat-x scroll 0 0 #000;
+  background:  #FC9DEA;
 }
 #content_area {
-  background: url('images/body_top_bg.png') repeat-x scroll center top #fff;
+  background: repeat-x scroll center top white;
   padding-top: 25px;
 }
 #footer_top_area {
@@ -116,16 +117,18 @@ ol {
 .logo a h1 {
   color: #fff;
   font-family: oswald;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 40px;
   text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 .logo a h1 span {
-  color: #ffd500;
+  color: #58B3FF;
 }
 .search {
-  background: none repeat scroll 0 0 #2c2c2b;
+  background: none repeat scroll 0 0 white;
   border: 1px solid #595957;
   padding: 5px;
 }
@@ -153,9 +156,10 @@ ol {
   width: 33px;
 }
 .header_bottom {
-  background: none repeat scroll 0 0 #ffd500;
+  background: none repeat scroll 0 0 #7BBBFE;
   min-height: 30px;
   padding: 10px;
+  box-shadow: 0 0 1.5px 1.5px rgb(0 0 0 / 10%);
 }
 /* dropdown menu*/
 .header_bottom ul {
@@ -187,7 +191,7 @@ ol {
   padding-right: 2px;
 }
 .header_bottom ul li ul {
-  background: none repeat scroll 0 0 #ffd500;
+  background: none repeat scroll 0 0 #7BBBFE;
   left: -99999px;
   position: absolute;
   z-index: 1000;
@@ -364,7 +368,7 @@ ol {
   -o-box-shadow: inset 0px 0px 50px 0px #999999;
 }
 .newsletter form input[type='submit'] {
-  background: url('images/nav_right.png') no-repeat scroll 90px 6px #ffd500;
+  background: no-repeat scroll 90px 6px #6AABFD;
   border: medium none;
   font-family: oswald light;
   font-size: 14px;
@@ -372,6 +376,10 @@ ol {
   text-transform: uppercase;
   width: 120px;
   cursor: pointer;
+}
+.newsletter form input[type='submit']:hover{
+background-color: #346AFD;
+  transition: 0.3s;
 }
 .single_sidebar {
   background: url('images/slider_bg.png') repeat scroll 0 0 rgba(0, 0, 0, 0);
