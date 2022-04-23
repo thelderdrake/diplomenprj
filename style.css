@@ -96,16 +96,18 @@ ol {
 /* home page style */
 #header_area {
   background:  #FC9DEA;
+  box-shadow: inset 0px 0px 30px 0px #f870e1;
 }
 #content_area {
   background: repeat-x scroll center top white;
   padding-top: 25px;
+  box-shadow: inset 0px 0px 50px 0px #999999;
 }
 #footer_top_area {
-  background: none repeat scroll 0 0 #171716;
-  margin-top: 25px;
+  background: none repeat scroll 0 0 #ee94da;
   padding: 20px 0;
-  border-top: 5px solid #ffd500;
+  border-top: 5px solid #00aeff;
+  box-shadow: inset 0px 0px 30px 0px #f870e1
 }
 #footer_bottom_area {
   padding: 15px 0px;
@@ -159,7 +161,8 @@ ol {
   background: none repeat scroll 0 0 #7BBBFE;
   min-height: 30px;
   padding: 10px;
-  box-shadow: 0 0 1.5px 1.5px rgb(0 0 0 / 10%);
+ 
+  box-shadow: outset 0px 0px 30px 0px #f870e1
 }
 /* dropdown menu*/
 .header_bottom ul {
@@ -260,12 +263,12 @@ ol {
   border-bottom: none;
 }
 .post_date {
-  background: none repeat scroll 0 0 #c3c3c3;
+  background: none repeat scroll 0 0 #93d4ff;
   margin-right: 10px;
   padding: 5px;
 }
 .post_date .date {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   text-align: center;
 }
@@ -281,16 +284,18 @@ ol {
   font-family: oswald;
 }
 .post_detail > a {
-  background: url('images/nav_right.png') no-repeat scroll 130px 4px #ffd500;
+  background: url('images/nav_right.png') no-repeat scroll 130px 4px #85d8ff;
   display: block;
-  font-family: oswald light;
+  font-family: 'Arial Narrow Bold', sans-serif;
   margin-top: 10px;
   padding: 5px 10px;
   width: 140px;
   float: right;
 }
 .post_detail > a:hover {
-  font-family: oswald;
+  font-family:'Arial Narrow Bold', sans-serif;
+  background-color: #28b7fa;
+  transition: 0.3s;
 }
 .post_detail h2 {
   font-size: 20px;
@@ -368,17 +373,19 @@ ol {
   -o-box-shadow: inset 0px 0px 50px 0px #999999;
 }
 .newsletter form input[type='submit'] {
-  background: no-repeat scroll 90px 6px #6AABFD;
+  background: no-repeat scroll 90px 6px #78d2fc;
   border: medium none;
-  font-family: oswald light;
+  font-family: 'Arial Narrow Bold', sans-serif;
   font-size: 14px;
   padding: 8px;
   text-transform: uppercase;
   width: 120px;
   cursor: pointer;
+  font-weight:550;
+  box-shadow: inset 0px 0px 30px 0px rgb(48, 173, 245)
 }
 .newsletter form input[type='submit']:hover{
-background-color: #346AFD;
+background-color: #18b4fc;
   transition: 0.3s;
 }
 .single_sidebar {
@@ -392,20 +399,21 @@ background-color: #346AFD;
   margin-bottom: 15px;
 }
 .sidebar_title > h2 {
-  background: none repeat scroll 0 0 #222222;
-  color: #fff;
+  background: none repeat scroll 0 0 #00aeff;
+  color: rgb(36, 36, 36);
   font-size: 16px;
   margin-left: -10px;
   margin-top: -10px;
   padding: 8px 10px;
   text-transform: uppercase;
   width: 100%;
+  font-weight: 550;
 }
 
 /*popular post*/
 .single_sidebar .popular_post ul li a {
   display: block;
-  background: #fff;
+  background: none repeat scroll 0 0 rgb(241, 163, 212);
   padding: 10px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -416,7 +424,7 @@ background-color: #346AFD;
   -o-box-shadow: 1px 4px 3px -2px #dddddd;
 }
 .single_sidebar .popular_post ul li a:hover {
-  background: #ffd500;
+  background: #00aeff;
   -webkit-transition: background 300ms ease-in;
   -moz-transition: background 300ms ease-in;
   -ms-transition: background 300ms ease-in;
@@ -426,15 +434,16 @@ background-color: #346AFD;
 
 /*Category*/
 .single_sidebar .cat-item {
-  background: none repeat scroll 0 0 #454545;
-  color: #ffd500;
+  background: none repeat scroll 0 0 rgb(241, 163, 212);
+  color:#000 ;
   font-weight: bold;
   margin-bottom: 5px;
   padding: 5px;
   text-align: right;
+  box-shadow: 1px 4px 3px -2px #dddddd;
 }
 .single_sidebar .cat-item a {
-  color: #ddd;
+  color: #000;
   display: inline-block;
   font-weight: normal;
   width: 80%;
@@ -446,7 +455,7 @@ background-color: #346AFD;
 }
 .single_sidebar .cat-item:hover {
   color: #000;
-  background: #ffd500;
+  background: #00aeff;
   -webkit-transition: background 300ms ease-in;
   -moz-transition: background 300ms ease-in;
   -ms-transition: background 300ms ease-in;
@@ -456,38 +465,51 @@ background-color: #346AFD;
 
 /*default sidebar list item*/
 .single_sidebar > ul li {
-  margin-bottom: 10px;
+  background: none repeat scroll 0 0 rgb(241, 163, 212);
+  color:#000 ;
+  font-weight: bold;
+  margin-bottom: 5px;
   padding: 5px;
-  background: #fff;
+  text-align: right;
+  box-shadow: 1px 4px 3px -2px #dddddd;
 }
-.single_sidebar > ul li a:hover {
-  text-decoration: underline;
+.single_sidebar > ul li:hover {
+  color: #000;
+  background-color: #00aeff;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-in;
+  -moz-transition: background 300ms ease-in;
+  -ms-transition: background 300ms ease-in;
+  -o-transition: background 300ms ease-in;
+  transition: background 300ms ease-in;
 }
 .footer_top_container {
   margin-left: -20px;
 }
 .single_footer_top {
-  color: #999;
+  color: #1b1b1b;
   margin-left: 20px;
   width: 326px;
 }
 .single_footer_top h2 {
-  color: #ffd500;
+  color: #1b1b1b;
 }
 .single_footer_top a {
-  color: #ddd;
+  color: #1b1b1b;
 }
 .single_footer_top ul li a {
-  background: none repeat scroll 0 0 #000;
-  color: #ddd;
+  background: none repeat scroll 0 0 rgb(235, 235, 235);
+  color: rgb(29, 28, 28);
   display: block;
   margin-bottom: 5px;
   padding: 8px;
-  font-family: oswald light;
+  font-family:'Arial Narrow Bold', sans-serif;
+  box-shadow: inset 0px 0px 30px 0px rgb(218, 218, 218)
 }
 .single_footer_top ul li a:hover {
-  background: #ffd500;
-  color: #000;
+  background: #00aeff;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
 .copyright {
   font-family: oswald;
@@ -497,7 +519,7 @@ background-color: #346AFD;
   color: #fff;
 }
 .copyright span {
-  color: #ffd500;
+  color: #00aeff;
 }
 .social ul li {
   float: left;
@@ -509,7 +531,7 @@ background-color: #346AFD;
   padding: 5px;
 }
 .social ul li a:hover {
-  color: #ffd500;
+  color: #00aeff;
 }
 
 /* Single page style */
@@ -544,7 +566,7 @@ background-color: #346AFD;
   display: block;
 }
 blockquote {
-  border-left: 3px solid #ffd500;
+  border-left: 3px solid #00aeff;
   font-weight: bold;
   margin-bottom: 10px;
   margin-left: 50px;
@@ -559,7 +581,7 @@ blockquote {
   padding: 10px;
 }
 .more_post_container h2 {
-  border-left: 5px solid #ffd500;
+  border-left: 5px solid #00aeff;
   margin-bottom: 0;
   padding: 5px;
 }
@@ -574,7 +596,7 @@ blockquote {
   color: #000;
 }
 .more_post a:hover {
-  color: #ffd500;
+  color: #00aeff;
   font-weight: bold;
 }
 .content ul {
@@ -596,12 +618,12 @@ blockquote {
 .btn {
   display: inline-block;
   padding: 8px 14px;
-  background: #ffd500;
+  background: #00aeff;
   margin: 15px 5px 15px 0px;
   font-family: oswald;
 }
 .btn:hover {
-  background: #f1b215;
+  background: #00aeff;
 }
 
 /*Related post */
@@ -617,7 +639,7 @@ blockquote {
   padding: 8px;
 }
 .more_themes h2 i {
-  color: #ffd500;
+  color: #00aeff;
 }
 .more_themes_container {
   margin-left: -15px;
@@ -625,7 +647,7 @@ blockquote {
 .single_more_themes {
   margin-left: 15px;
   width: 220px;
-  background: #ffd500;
+  background: #00aeff;
   color: #fff;
   margin-bottom: 15px;
 }
@@ -649,10 +671,10 @@ blockquote {
   font-weight: bold;
   margin-bottom: 30px;
   padding: 8px;
-  border-left: 5px solid #ffd500;
+  border-left: 5px solid #00aeff;
 }
 .more_works h2 i {
-  color: #ffd500;
+  color: #00aeff;
 }
 .more_works_container {
   margin-left: -15px;
@@ -664,7 +686,7 @@ blockquote {
   width: 220px;
 }
 .single_more_works a h2 {
-  color: #ffd500;
+  color: #00aeff;
   font-size: 14px;
   margin-bottom: 0;
   padding: 5px;
@@ -702,7 +724,7 @@ blockquote {
   padding: 5px;
 }
 .single_work h2 {
-  background: none repeat scroll 0 0 #ffd500;
+  background: none repeat scroll 0 0 #00aeff;
   font-size: 16px;
   left: 0;
   padding: 5px 10px;
@@ -718,7 +740,7 @@ blockquote {
 .work_pagination .newer,
 .work_pagination .older {
   background: none repeat scroll 0 0 #454545;
-  color: #ffd500;
+  color: #00aeff;
   display: block;
   font-family: oswald;
   padding: 10px;
@@ -781,13 +803,13 @@ blockquote {
 .contact_us form input.wpcf7-submit {
   background: #222222;
   border: medium none;
-  color: #ffd500;
+  color: #00aeff;
   cursor: pointer;
   font-size: 18px;
   padding: 10px 40px;
   font-family: oswald;
 }
 .contact_us form input.wpcf7-submit:hover {
-  background: #ffd500;
+  background:#00aeff;
   color: #000;
 }
